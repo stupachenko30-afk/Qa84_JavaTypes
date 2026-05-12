@@ -28,12 +28,23 @@ public class MainJavaTypes {
            String str1 = str;
            String str2 = str1;
         System.out.println(str2);
+        str = "Bye";
+        System.out.println(str1);
+        str2 = str;
+        //System.out.println(str);
+        str1 = null;
+
 
            /*
-           str->["Hello"]
+           str->["Hello"] str-> ["Bye"]
            str1->["Hello"]
            str2->["Hello"]
+
+           str1 -> null
+           JVM
+           GC
             */
+
 
     }
 }
